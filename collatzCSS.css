@@ -1,0 +1,130 @@
+body {
+	background-color: white;
+}
+			
+.title {
+	overflow: hidden;
+	float: left;
+	background-color: #333;
+	position: fixed;
+	font-family: Impact;
+	z-index: 3;
+	margin-top: 0.1%;
+	margin-left: 6%;
+	border-right: solid 0px;
+	border-color: transparent;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-left: solid 0px;
+	border-color: transparent;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+	
+.title a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+	
+.nav_bar {
+	background-color: #333;
+	font-family: Impact;
+	float: right;
+	position: fixed;
+	right: 0.52%;
+	z-index: 3;
+	margin-top: 0.1%;
+	margin-right: 6%;
+	border-left: solid 0px;
+	border-color: transparent;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-right: solid 0px;
+	border-color: transparent;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+	
+.nav_bar #left {
+	border-left: solid 10px;
+	border-color: transparent;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+	
+.nav_bar #right {
+	border-right: solid 10px;
+	border-color: transparent;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+	
+.nav_bar .link {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+	
+button {
+	font-family: Impact;
+}
+	
+.dropDown {
+	float: left;
+}
+	
+.dropDown .dropBtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+}
+	
+.nav_bar a:hover, .dropDown:hover
+dropBtn {
+	color: #cc0000;
+	display: block;
+}
+			
+.collatzHeading {
+	z-index: 1;
+	padding: 0px 0px;
+	position: absolute;
+	margin-top: 3%;
+	left: 3%;
+	font-family: Impact;
+	font-size: 25px;
+	color: #333;
+}
+	
+.collatzContents {
+z-index: 1;
+	padding: 0px 0px;
+	position: absolute;
+	margin-top: 11%;
+	left: 3%;
+	font-family: Impact;
+	font-size: 30px;
+	color: #cc0000;
+}
+	
+#collatzPic {
+	z-index: 2;
+	padding: 0px 0px;
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	display: blocked;
+	overflow: hidden;
+	margin-top: 8.5%;
+	right: 1%
+}

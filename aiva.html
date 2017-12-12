@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bit10 - AIVA</title>
+		<link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+    </head>
+    <body class="pge pge-cont">
+        <div class="slide-down-page">
+			<section class="columns">
+				<h1>
+					<a href="index.html" class="mnu mnu-home">Home</a>
+				</h1>
+				<h1>
+					<a href="projects.html" class="mnu mnu-proj">Projects</a>
+				</h1>
+				<h1>
+					<a href="mathematics.html" class="mnu mnu-math">Mathematics</a>
+				</h1>
+				<h1>
+					<a href="about.html" class="mnu mnu-abou">About</a>
+				</h1>
+			</section>
+        </div>
+		<div class="content">
+			<a href="#" class="btn btn-menu">
+				<div class="menu"></div>
+				<div class="menu"></div>
+				<div class="menu"></div>
+			</a>
+			<header>
+				<video class="vid vid-aiva" id="glass" width="100%" src="assets/videos/aiva-vid.mp4" autoplay/>
+			</header>
+			<section>
+				<h3 class="des">AIVA is a personal assistant designed to handle basic tasks via talk or text. The home window provides access to textual searches - internet and local - as well as a menu bar via which the user can access settings. When the assistant opens for the first time, a login window is displayed with a default username and password of "root." However, a "remember me" setting is selected by default and the user's credentials can be changed through either the settings menu or the search bar.</h3>
+				<h1>
+					<a class="sup sup-code columns" href="https://github.com/OlCTek/AIVA" target="_blank">View Code</a>
+					<a class="sup sup-pics columns" href="#popup">View Demos</a>
+				</h1>
+			</section>
+			<div id="popup" class="overlay">
+				<div class="slideshow-container">
+					<a class="cls-pic" href="#">&times;</a>
+					<div class="mySlides fade">
+						<video class="vids" src="assets/videos/aiva_movement.mp4" style="height:75vh" autoplay loop>
+					</div>
+					<div class="mySlides fade">
+						<video class="vids" src="assets/videos/aiva_settings.mp4" style="height:75vh" autoplay loop>
+					</div>
+					<div class="mySlides fade">
+						<video class="vids" src="assets/videos/aiva_search.mp4" style="height:75vh" autoplay loop>
+					</div>
+					<div class="mySlides fade">
+						<video class="vids" src="assets/videos/aiva_theme.mp4" style="height:75vh" autoplay loop>
+					</div>
+					<div class="mySlides fade">
+						<video class="vids" src="assets/videos/aiva_internet.mp4" style="height:75vh" autoplay loop>
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<div>
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="assets/scripts/script.js"></script>
+    </body>
+</html>

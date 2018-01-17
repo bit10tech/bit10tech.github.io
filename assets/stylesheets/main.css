@@ -263,32 +263,32 @@ h2 {
 
 .mth-coll:hover {
 	color: darkred;
-	box-shadow: inset 0 0 0 100px #333;
+	box-shadow: inset 0 0 0 200px #333;
 }
 
 .mth-wils:hover {
 	color: darkgreen;
-	box-shadow: inset 0 0 0 100px #333;
+	box-shadow: inset 0 0 0 200px #333;
 }
 
 .mth-ferm:hover {
 	color: darkblue;
-	box-shadow: inset 0 0 0 100px #333;
+	box-shadow: inset 0 0 0 200px #333;
 }
 
 .mth-bert:hover {
 	color: darkblue;
-	box-shadow: inset 0 0 0 100px #333;
+	box-shadow: inset 0 0 0 200px #333;
 }
 
 .mth-gold:hover {
 	color: gold;
-	box-shadow: inset 0 0 0 100px #333;
+	box-shadow: inset 0 0 0 200px #333;
 }
 
 .mth-othe:hover {
 	color: darkred;
-	box-shadow: inset 0 0 0 100px #333;
+	box-shadow: inset 0 0 0 200px #333;
 }
 
 .cde a {

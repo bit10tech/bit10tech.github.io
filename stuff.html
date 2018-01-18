@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bit10 - STUFF</title>
+		<link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+    </head>
+    <body class="pge pge-cont">
+        <div class="slide-down-page">
+			<section class="columns">
+				<h1>
+					<a href="index.html" class="mnu mnu-home">Home</a>
+				</h1>
+				<h1>
+					<a href="projects.html" class="mnu mnu-proj">Projects</a>
+				</h1>
+				<h1>
+					<a href="mathematics.html" class="mnu mnu-math">Mathematics</a>
+				</h1>
+				<h1>
+					<a href="about.html" class="mnu mnu-abou">About</a>
+				</h1>
+			</section>
+        </div>
+		<div class="content">
+			<a href="#" class="btn btn-menu">
+				<div class="menu"></div>
+				<div class="menu"></div>
+				<div class="menu"></div>
+			</a>
+			<header>
+				<video class="vid vid-aiva" id="glass" width="100%" src="assets/videos/stuff_vid.mp4" autoplay/>
+			</header>
+			<section>
+				<h3 class="des">This is just whatever project I find myself working on in my spare time when I'm bored. If you have any questions or suggestions, feel free to use my contact info in the About section. At some point I might make videos on how some of this stuff is made, but for now please enjoy this lovely collection of pictures and videos. As with the rest of my projects, code can be found on my Github. </h3>
+				<h1 class="cde">
+					<a class="cde" href="#popup">View Stuff</a>
+				</h1>
+			</section>
+			<div id="popup" class="overlay">
+				<div class="slideshow-container">
+					<a class="cls-pic" href="#">&times;</a>
+					<div class="mySlides fade">
+						<img src="assets/pictures/hub1.jpg" style="height:75vh">
+					</div>
+					<div class="mySlides fade">
+						<img src="assets/pictures/hub2.jpg" style="height:75vh">
+					</div>
+					<div class="mySlides fade">
+						<video muted class="vids" src="assets/videos/hub.mp4" style="height:75vh" autoplay loop>
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<div>
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="assets/scripts/script.js"></script>
+    </body>
+</html>

@@ -203,6 +203,10 @@ h2 {
 	width: 33.33%;
 	overflow: hidden;
 }
+
+.prj-stuf {
+	width: 100%;
+}
 			
 .prj-aiva:hover {
 	color: darkred;

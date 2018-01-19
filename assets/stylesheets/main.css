@@ -331,12 +331,12 @@ h2 {
 
 .abo-abou:hover {
 	color: darkred;
-	box-shadow: inset 0 0 0 200px #333;
+	box-shadow: inset 0 0 0 600px #333;
 }
 
 .abo-cont:hover {
 	color: darkgreen;
-	box-shadow: inset 0 0 0 200px #333;
+	box-shadow: inset 0 0 0 600px #333;
 }
 	
 @media screen and (orientation:portrait) {

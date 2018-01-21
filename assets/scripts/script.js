@@ -4,6 +4,10 @@
 	===================
 */
 
+$(window).load(function() {
+	$(".pre-loader").fadeOut("slow");
+});
+
 var video = document.getElementById('glass');
 			
 video.addEventListener("timeupdate", function() {

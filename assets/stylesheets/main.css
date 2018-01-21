@@ -694,6 +694,27 @@ body {
 	background: -moz-linear-gradient(white, #333, white);
 	background: linear-gradient(white, #333, white);
 }
+
+.no-js #loader {
+	display: none;
+}
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+.pre-loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(assets/videos/Preloader_6.gif) center no-repeat #fff;
+}
 			
 .slide-down-page {
 	position: absolute;

@@ -689,6 +689,10 @@ a:hover {
             
 body {
 	background: white;
+	background: -webkit-linear-gradient(white, darkred, white);
+	background: -o-linear-gradient(white, darkred, white);
+	background: -moz-linear-gradient(white, darkred white);
+	background: linear-gradient(white, darkred white);
 }
 
 .no-js #loader {

@@ -200,12 +200,8 @@ h2 {
 	color: #333;
 	transition: all 0.5s ease;
 	float: left;
-	width: 33.33%;
+	width: 50%;
 	overflow: hidden;
-}
-
-.prj-stuf {
-	width: 100%;
 }
 			
 .prj-aiva:hover {

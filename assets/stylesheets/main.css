@@ -850,16 +850,18 @@ body {
 */
 
 @media screen and (max-width:1250px) {
-	.tech {
-		display: none;
-	}
-	
 	.ftr-ttle {
 		display: none;
 	}
 	
 	.lnk2 {
 		margin-left: 30%;
+	}
+}
+
+@media screen and (max-width:1125px) {
+	.tech {
+		display: none;
 	}
 }
 

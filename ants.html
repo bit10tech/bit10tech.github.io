@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bit10 - ANTS</title>
+		<link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/gif">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+    </head>
+    <body class="pge pge-ants">
+		<div class="sdp1">
+			<section class="set1">
+				<ul class="spfs">
+					<li class="spf spf-proj"><a class="aiva" href="aiva.html"><strong><span class="primary">Virtual Assistant</span><span class="secondary">AIVA</span></strong></a></li>
+					<li class="spf spf-proj"><a class="ants" href="ants.html"><strong><span class="primary" style="color: darkred">Ant Research</span><span class="secondary" style="color:#8b0000">ANTS</span></strong></a></li>
+					<li class="spf spf-proj"><a class="arms" href="arms.html"><strong><span class="primary">Prosthetic Arm</span><span class="secondary">ARMS</span></strong></a></li>
+					<li class="spf spf-proj"><a class="stuf" href="stuf.html"><strong><span class="primary">Other Fun Stuff</span><span class="secondary">STUF</span></strong></a></li>
+				</ul>
+			</section>
+        </div>
+		<div class="sdp2">
+			<section class="set2">
+				<ul class="spfs">
+					<li class="spf spf-math"><a class="bert" href="bertrand.html"><strong><span class="primary">Bertrand</span><span class="secondary">BERT</span></strong></a></li>
+					<li class="spf spf-math"><a class="coll" href="collatz.html"><strong><span class="primary">Collatz</span><span class="secondary">COLL</span></strong></a></li>
+					<li class="spf spf-math"><a class="ferm" href="fermat.html"><strong><span class="primary">Fermat</span><span class="secondary">FERM</span></strong></a></li>
+					<li class="spf spf-math"><a class="gold" href="goldbach.html"><strong><span class="primary">Goldbach</span><span class="secondary">GOLD</span></strong></a></li>
+					<li class="spf spf-math"><a class="wils" href="wilson.html"><strong><span class="primary">Wilson</span><span class="secondary">WILS</span></strong></a></li>
+				</ul>
+			</section>
+		</div>
+        <div class="content">
+			<header class="hdr hdr-ants">
+				<div class="mnu mnu-ants">
+					<ul class="lnks">
+						<li class="nlnk ttl ttl-aiva"><a href="index.html"><strong>Bit<span style="color:darkred">10</span> Technologies</strong></a></li>
+						<li class="nlnk"><a href="contact.html"><strong>Contact</strong></a></li>
+						<li class="nlnk"><a href="about.html"><strong>About</strong></a></li>
+						<li class="lnk lnk-math"><a href="#"><strong>Mathematics</strong></a></li>
+						<li class="lnk lnk-proj"><a href="#"><strong>Projects</strong></a></li>
+					</ul>
+				</div>
+			</header>
+			<section class="cnr cnr-ants">
+				<h1 class="des des-ants">The idea first came to me while I was sitting on a bench at a local university, observing a collection of ants exploring the pavement. The goal of this research is to see if ant exploration habits can provide a reliable foundation for autonomous search-and-rescue drones. I am using a motion tracking code created in Python to track the ants and a 3D-printed maze I designed that can be disassembled and reassembled to form new pathways. I am also using homemade quadcopters for testing.</h1>
+			</section>
+			<footer class="ftr ftr-ants">
+				<a class="ftr-lnk" href="#proposal">
+					<h3 class="lnk1 lnk1-ants">View proposal</h3>
+				</a>
+				<a class="ftr-lnk" href="#popup">
+					<h3 class="lnk2 lnk2-ants">View progress</h3>
+				</a>
+				<h1 class="ftr-ttle">AN<span style="color:darkred">T</span>S</h1>
+			</footer>
+			<div id="popup" class="overlay">
+				<div class="slideshow-container pop">
+					<a class="cls-pic" href="#">&times;</a>
+					<div class="mySlides fade">
+						<img src="assets/images/ant_maze1.jpg" style="height:75vh">
+					</div>
+					<div class="mySlides fade">
+						<img src="assets/images/ant_maze2.jpg" style="height:75vh">
+					</div>
+					<div class="mySlides fade">
+						<img src="assets/images/ant_maze3.jpg" style="height:75vh">
+					</div>
+					<div class="mySlides fade">
+						<video class="vids" src="assets/videos/ant_vidz.mp4" style="height:75vh" controls>
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<div>
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<div id="proposal" class="overlay">
+				<div class="pprop">
+					<a class="cls-pop" href="#">&times;</a>
+					<div class="note" style="text-align:left">In 1994, the Department of Biological Sciences at Stanford University [1] conducted an experiment inspired by the research of W. Bond and P. Slingsby [2] which studied the group activities of a colony of foraging ants. The goal was to expand upon the theory that when a group of ants are exploring an unknown area, individual ant movement is dependent upon the density of the group. That is to say, when a group of ants are exploring an unknown area they are prone to take more linear paths while the density is low and less linear paths - resulting in what appear to be random configurations - when the density is high. This network of ant exploration allows the group to explore an area in the most efficient manner, given the size of the group.<br><br>The experiment, led by Deborah M. Gordon, examined the Argentine ant, Linepithema humile, colonies at different densities in areas of varying dimensions.In the first experiment, Gordon measured the deviation of turning angle per each ant to determine the correlation between path shape and group density. This was termed as the “turning index” for each ant; high index values indicate a higher propensity to turn while low index values indicate a more linear path [1]. In the second experiment, Gordon observed what would happen should the ants of the smaller area be given a larger area to explore. What she found was that as the area became larger, the turning index became less and the ants’ paths became more linear, establishing a proportional relationship between density and index, and an inversely proportional relationship between area and index.<br><br>In my research I would like to implement the results of the studies done at Stanford into an exploration algorithm that can be applied to unmanned exploration vehicles. The goal is to create a program that allows a group of drones to most effectively explore an area that is completely unknown to them, based on the number of drones in the group. Gordon’s experiment [1] videotaped the group of ants in a circular arena and mapped a “foraging trail” for each ant. She then used an Imaging Technology VP1100 Frame Grabber (IBM PC) to analyze 180 tapes and create a documentation of the ants’ paths. While gordon’s experiment relied on the studies of one ant (the Argentine ant), I would perform similar experiments documenting different species of ants, in order to observe how different paths are derived in each species. Furthermore I would like to examine how the ant colony disperses work among the group in accomplishing the task of exploring two or more areas of different dimensions at the same time. The data taken from the experiments will provide material around which I can base an algorithm that can be easily implemented into a group of two or more drones for various exploration purposes.<br><br>The use of an ant-based exploration algorithm in drones is applicable to a variety of commercial uses. First and foremost is the use of drones in natural disaster situations in which a group may be used to map an area in order to find specific people or objects. Similarly, an exploration algorithm can be applied to drones used to create virtual models of three dimensional areas. Through this research I would like to examine and develop group cooperation for aerial robots with the hope that I will be able to provide an algorithm that can be easily employed through drones to efficiently map out and explore unknown areas.<br><br>References:<br>[1] Gordon, Deborah M. “The Expandable Network of Ant Exploration.” Animal Behaviour 50.4 (1995): 995-1007. Web.<br>[2] Bond, W., and P. Slingsby. “Collapse of an Ant-Plant Mutualism: The Argentine Ant (Iridomyrmex Humilis) and Myrmecochorous Proteaceae.” Ecology 65.4 (1984): 1031-037. Web.</div>
+				</div>
+			</div>
+        </div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+		<script src="assets/scripts/script.js"></script>
+    </body>
+</html>

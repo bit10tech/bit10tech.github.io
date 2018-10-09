@@ -1,0 +1,878 @@
+/*
+	===================
+		reset
+	===================
+*/
+
+*, *:after, *:before {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	position: relative;
+	outline: none;
+	text-decoration: none;
+}
+
+/* 
+	===================
+		clear-fix
+	===================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/* 
+	===================
+		grid
+	===================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*
+	===================
+		typography
+	===================
+*/
+
+h1, h2 {
+	width: 100%;
+	text-align: center;
+	font-family: Arial;
+	padding: 0;
+	padding-top: 12.5%;
+	margin-top: 0%;
+	font-size: 150px;
+	background: transparent;
+	color: grey;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+/*
+	===================
+		menus
+	===================
+*/
+
+.mnu {
+	box-shadow: 0px 5px 0px black;
+	z-index: 5;
+	position: fixed;
+	width: 100%;
+}
+
+/*
+	===================
+		links
+	===================
+*/
+
+.secondary {
+	display: none;
+}
+			
+.lnks {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: darkred;
+	z-index: 5;
+}
+
+.lnk, .nlnk {
+	display: inline;
+	float: right;
+	z-index: 5;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.lnk a, .nlnk a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: block;
+	font-size: 20px;
+	padding: 16px 25px;
+	font-family: Arial;
+	position: relative;
+	z-index: 5;
+	-moz-transform: perspective(0px) translateZ(0);
+	-o-transform: perspective(0px) translateZ(0);
+	-webkit-transform: perspective(0px) translateZ(0);
+	transform: perspective(0px) translateZ(0);
+	-mox-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+.lnk a:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: black;
+	-moz-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-moz-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+			
+
+
+.lnk a:hover, a:active {
+	color: #333;
+}
+
+.nlnk a:hover, a:active {
+	color: black;
+}
+
+.lnk a:focus:before, a:active:before {
+	-moz-transform: scaleY(1);
+	-o-transform:scaleY(1);
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+.spfs {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.spf {
+	display: inline;
+	float: left;
+	text-align: center;
+}
+
+.spf-proj {
+	width: 25%;
+}
+
+.spf-math {
+	width: 20%;
+}
+
+.spf > a {
+	text-decoration: none;
+	color: #333;
+	text-align: center;
+	display: block;
+	font-size: 25px;
+	padding-bottom: 3px;
+	margin: 0px 25px;
+	font-family: Arial;
+	position: relative;
+	z-index: 1;
+	-o-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+.spf > a:hover {
+	color: #8b0000;
+}
+
+.sdp1, .sdp2 {
+	position: absolute;
+	width: 100%;
+	box-sizing: content-box;
+	background-color: transparent;
+	text-align: center;
+}
+
+/*
+	===================
+		titles
+	===================
+*/
+
+.ttl {
+	float: left;
+	z-index: -1;
+	background-color: black;
+}
+
+.ttl a {
+	color: grey;
+	font-size: 30px;
+	padding: 10px 25px;
+	z-index: -1;
+}
+
+.ttl a:hover {
+	color: black;
+}
+
+.ttl-nani {
+	display: none;
+}
+
+.ttl-subt {
+	margin-top: 10%;
+}
+
+/*
+	===================
+		content
+	===================
+*/
+
+.des {
+	float: left;
+	text-align: left;
+	font-size: 27.5px;
+	padding-left: 1.25%;
+	padding-top: 10%;
+	padding-bottom: 22.5%;
+	color: grey;
+	width: 97.5%;
+	mix-blend-mode: difference;
+}
+
+/*
+	===================
+		pictures
+	===================
+*/
+
+.img-aiv1 {
+	float: right;
+	border: 3px #333 solid;
+	margin-top: 100vh;
+	margin-right: 2.5%;
+}
+
+/*
+	===================
+		footer
+	===================
+*/
+
+.lnk1 {
+	color: white;
+	font-family: Impact;
+	bottom: 0;
+	font-size: 50px;
+	z-index: 5;
+	text-align: center;
+	float: left;
+	left: 0;
+	bottom: 10%;
+	position: fixed;
+	padding-bottom: 3px;
+}
+
+.lnk1-abou {
+	width: 66.66%;
+}
+
+.lnk1-cont {
+	color: black;
+	width: 66.66%;
+	bottom: 50%;
+	font-size: 75px;
+}
+
+.lnk1-aiva {
+	width: 33.33%;
+}
+
+.lnk1-ants {
+	width: 33.33%;
+}
+
+.lnk1-arms {
+	width: 33.33%;
+}
+
+.lnk1-stuf {
+	width: 66.66%;
+}
+
+.lnk1-bert {
+	width: 33.33%;
+}
+
+.lnk1-coll {
+	width: 33.33%;
+}
+
+.lnk1-ferm {
+	width: 33.33%;
+}
+
+.lnk1-gold {
+	width: 33.33%;
+}
+
+.lnk1-wils {
+	width: 33.33%;
+}
+
+.lnk2 {
+	color: white;
+	font-family: Impact;
+	bottom: 0;
+	font-size: 50px;
+	z-index: 5;
+	text-align: center;
+	float: left;
+	bottom: 10%;
+	position: fixed;
+	padding-bottom: 3px;
+}
+
+.lnk2-aiva {
+	width: 33.33%;
+	left: 33.33%;
+}
+
+.lnk2-ants {
+	width: 33.33%;
+	left: 33.33%;
+}
+
+.lnk2-arms {
+	width: 33.33%;
+	left: 33.33%;
+}
+
+.ftr-lnk > .lnk1,
+.ftr-lnk > .lnk2 {
+	-o-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+.ftr-lnk > .lnk1:hover,
+.ftr-lnk > .lnk2:hover {
+	color: darkred;
+}
+
+.ftr-ttle {
+	text-align: right;
+	float: right;
+	right: 2.5%;
+	bottom: 0;
+	color: grey;
+	position: fixed;
+}
+
+/*
+	===================
+		pop-ups
+	===================
+*/
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 10;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.pop-code {
+	margin: 50px auto;
+	margin-top: 5%;
+	padding: 10px;
+	background: white;
+	border-radius: 5px;
+	width: 65%;
+	height: 80vh;
+	position: relative;
+	transition: all 100ms ease-in-out;
+	z-index: 10;
+}
+
+.pop {
+	margin: 50px auto;
+	padding: 50px;
+	position: relative;
+	transition: all 100ms ease-in-out;
+}
+
+.pop-code .cls-pop {
+	position: absolute;
+	top: 0;
+	right: -50px;
+	transition: all 200ms;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.pop-code .cls-pop:hover {
+	color: darkred;
+}
+
+.pop-code .note {
+	width: 100%;
+	height: 75vh;
+}
+
+@media screen and (max-width: 700px) {
+	.pop {
+		width: 70%;
+	}
+	.pop-code {
+		width: 70%;
+	}
+}
+
+/*
+	===================
+		slide shows
+	===================
+*/
+
+.slideshow-container {
+	max-width: 75%;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+	margin-top: 5vh;
+}
+
+.mySlides img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.vids {
+	position: relative;
+	width: 100%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.next {
+	right: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.prev {
+	left: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.cls-pic {
+	position: absolute;
+	top: 10%;
+	right: 0px;
+	transition: all 200ms;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+}
+
+.cls-pic:hover {
+	color: darkred;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	z-index: 10;
+	padding: 0;
+	right: 
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+/*
+	===================
+		pop-ups
+	===================
+*/
+
+.ppop {
+	margin: 250px auto;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+	width: 25%;
+	position: relative;
+	transition: all 100ms ease-in-out;
+}
+
+.poverlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.poverlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.pprop {
+	margin: 250px auto;
+	margin-top: 2.5%;
+	padding: 5%;
+	background: white;
+	border-radius: 5px;
+	width: 75%;
+	height: 90vh;
+	position: relative;
+	transition: all 100ms ease-in-out;
+}
+
+.pprop .cls-pop {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	transition: all 200ms;
+	font-size: 50px;
+	font-weight: bold;
+	color: #333;
+}
+
+.ppop .cls-pop {
+	position: absolute;
+	top: 0%;
+	right: 2.5%;
+	transition: all 200ms;
+	font-size: 25px;
+	font-weight: bold;
+	color: black;
+}
+
+.pprop .cls-pop:hover {
+	color: darkred;
+}
+
+.ppop .cls-pop:hover {
+	color: darkred;
+}
+
+.pprop .note {
+	max-height: 100%;
+	overflow: auto;
+	color: #333;
+	font-family: Impact;
+	font-weight: bold;
+	transition: all 250ms ease-in-out;
+}
+
+.ppop .note {
+	max-height: 75%;
+	overflow: auto;
+	color: #333;
+	font-family: Impact;
+	font-weight: bold;
+	transition: all 250ms ease-in-out;
+	text-align: left;
+}
+
+/*
+	===================
+		body
+	===================
+*/
+
+body {
+	background-color: black;
+	background-image: url("wallpaper.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+	background-position: center;
+	background-size: 100% 100vh;
+	animation-name: pulse;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+.content {
+	height: 100vh;
+	text-align: center;
+}
+
+.no-js #loader {
+	display: none;
+}
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+/*
+	===================
+		screen-resize
+	===================
+*/
+
+@media screen and (max-width:1350px) {
+	.tech {
+		display: none;
+	}
+}
+
+@media screen and (max-width:1250px) {
+	.ftr-ttle {
+		display: none;
+	}
+	
+	.lnk2 {
+		margin-left: 30%;
+	}
+}
+
+@media screen and (max-width:1000px) {
+	body {
+		background-color: #333;
+		background-image: none;
+	}
+	
+	.mnu {
+		box-shadow: 0px 0px 0px #333;
+	}
+
+	.ttl {
+		display: none;
+	}
+	
+	.ttl-anim {
+		display: none;
+	}
+	
+	.ttl-nani {
+		display: block;
+		margin-top: 5%;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	
+	.ttl-subt {
+		margin-top: 15%;
+	}
+	
+	.lnk {
+		float: left;
+	}
+	
+	.lnk a:before {
+		background: #333;
+	}
+	
+	.lnk a:hover, a:active {
+		color: black;
+	}
+	
+	.spf > .aiva:before {
+		left: 28%;
+		width: 44%;
+	}
+
+	.spf > .ants:before {
+		left: 25%;
+		width: 50%;
+	}
+
+	.spf > .arms:before {
+		left: 23%;
+		width: 54%;
+	}
+
+	.spf > .stuf:before {
+		left: 26%;
+		width: 48%;
+	}
+
+	.spf > .bert:before {
+		left: 2.5%;
+		width: 102.5%;
+	}
+
+	.spf > .coll:before {
+		left: 10%;
+		width: 80%;
+	}
+
+	.spf > .ferm:before {
+		left: 10%;
+		width: 80%;
+	}
+
+	.spf > .gold:before {
+		left: 2.5%;
+		width: 112.5%;
+	}
+
+	.spf > .wils:before {
+		left: 10%;
+		width: 80%;
+	}
+	
+	.primary {
+		display: none;
+	}
+	
+	.secondary {
+		display: block;
+	}
+	
+	.des {
+		float: left;
+		text-align: center;
+		padding-top: 20%;
+		color: white;
+		width: 97.5%;
+		mix-blend-mode: difference;
+	}
+	
+	.ftr-lnk > h3:hover:before,
+	.ftr-lnk > h3:focus:before {
+		visibility: visible;
+		transform: scaleX(1);
+		background: #333;
+	}
+	
+	.lnk a, .nlnk a {
+		padding: 10.5px 15px;
+	}
+	
+	.spf > a {
+		color: white;
+	}
+	
+	.lnk1 {
+		width: 50%;
+	}
+	
+	.lnk2 {
+		width: 50%;
+		margin-left: 12.5%;
+	}
+}	
+
+@media screen and (max-width: 700px) {
+	.pop {
+		width: 70%;
+	}
+	
+	.ppop {
+		width: 70%;
+	}
+	
+	.pop-code {
+		width: 70%;
+	}
+}
+	
